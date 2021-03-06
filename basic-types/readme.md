@@ -12,7 +12,7 @@ let|const variableName: typeAnnotation = value
 <br>
 
 ## 'Any' Type 
-If you uncomment `noImplicitAny` in tsconfig.json file, then you'll get an error on 'any' typed variables.
+If you want to avoid 'any' type, then just uncomment `noImplicitAny` in tsconfig.json file. Then you'll get an error on 'any' typed variables.
 ```ts
 let variableName; // Here the veriable is declared, but didn't asigned to a value. So the 'Type' of the variable is 'any'.
 
@@ -112,4 +112,13 @@ let human = {
 
 human.name = 'Sourav'
 // human.canTalk = true     // error: Property 'canTalk' does not exist on type
+```
+
+<br>
+
+### Null and Undefined
+In TypeScript, both undefined and null actually have their types named undefined and null respectively.
+```ts
+let data: undefined = undefined;
+let response: null = null;
 ```

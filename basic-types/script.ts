@@ -38,3 +38,8 @@ let human = {
 }
 human.name = 'Sourav'
 // human.canTalk = true     // error: Property 'canTalk' does not exist on type
+
+
+// Null and Undefined
+let data: undefined = undefined;
+let response: null = null;

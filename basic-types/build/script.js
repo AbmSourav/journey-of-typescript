@@ -12,8 +12,18 @@ var octal = 484;
 // console.log(typeof(octal))
 // String
 var greetings = "Hello Universe...";
-console.log(typeof (greetings), greetings);
+// console.log(typeof(greetings), greetings)
 // Array
-var list = [1, 2, 3];
-var genericArrayType = [1, 2, 3];
-console.log(typeof (list), list);
+var arr = []; // any type
+arr.push('Hello');
+arr.push(2021);
+var mixed = ["Apple", 2021, true];
+// mixed.push({"name": "Sourav"})   // type error
+var list = [1, 2, 3]; // Explicitly declared array
+// Object
+var human = {
+    name: "",
+    canWalt: true,
+};
+human.name = 'Sourav';
+// human.canTalk = true     // error: Property 'canTalk' does not exist on type
