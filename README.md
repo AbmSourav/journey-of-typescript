@@ -16,7 +16,6 @@ Then changed `outDir` to `./build`. Now if I compile script.ts file with `tsc` t
 
 <br>
 <hr>
-<br>
 
 ## Index
 * [Basic Types](https://github.com/AbmSourav/journey-of-typescript/tree/main/01.%20basic-types#basic-data-types-in-typescript)

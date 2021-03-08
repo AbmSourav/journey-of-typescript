@@ -3,7 +3,7 @@
 <br>
 
 ## Declear a Variable
-If you use `const` then you can't reasign the value.
+Just like JavaScript, if you use `const` then you can't reasign the value.
 ```ts
 let variableName
 let|const variableName: typeAnnotation = value
@@ -17,7 +17,6 @@ If you want to avoid 'any' type, then just uncomment `noImplicitAny` in tsconfig
 let variableName; // Here the veriable is declared, but didn't asigned to a value. So the 'Type' of the variable is 'any'.
 
 variableName = "Sourav" // Now TypeScript will get the 'string' type automatically.
-
 ```
 
 <br>
