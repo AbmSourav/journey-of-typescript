@@ -88,7 +88,7 @@ console.log(response.code);
 <br>
 
 You must be thinking, we can do it this way...
-No we can't do it. TypeScript will through an error.
+No we can't do it. TypeScript will through an error. TypeScript can't access properties of the object.
 ```ts
 function apiResponse(obg: object) {
 	return obg;
