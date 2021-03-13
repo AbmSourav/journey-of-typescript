@@ -1,5 +1,8 @@
 # Advanced Types
 
+<br>
+<br>
+
 ## Union Types
 A variable or parameter can espects two or more types. Like `number` or `string`.
 ```ts
@@ -20,6 +23,8 @@ let arr: (string | number)[] = []
 arr.push('Sourav')
 arr.push(2021)
 ```
+
+<br>
 
 ## Enum Type
 Enums are a feature added to JavaScript by TypeScript which allows for describing a value which could be one of a set of possible named constants.
