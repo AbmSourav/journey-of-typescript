@@ -57,3 +57,24 @@ class RollsRoyce implements Car {
 	}
 }
 new RollsRoyce("Ghost (sedan)");
+
+
+// generic type into interface
+interface PostType<T extends object|string> {
+	id: number
+	title: string
+	content: T
+}
+// const post: PostType<object> = {
+// 	id: 11,
+// 	title: "Hi There",
+// 	content: {text: '', img: ''}
+// }
+
+class GetPost implements PostType<object> {
+	id = 11
+	title = "Hi There"
+	content = {paragraph: '', img: ''}
+}
+const getPosts = new GetPost()
+// getPosts.content.paragraph

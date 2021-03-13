@@ -75,3 +75,33 @@ class RollsRoyce implements Car {
 new RollsRoyce("Ghost (sedan)");
 // result: Brand Name: Rolls Royce, Model: Ghost (sedan), and the Price is $311900.
 ```
+
+<br>
+
+## Generic Type into Interface
+```ts
+interface PostType<T> {
+	id: number
+	title: string
+	content: T
+}
+
+class GetPost implements PostType<object> {
+	id = 11
+	title = "The World is not enough"
+	content = {paragraph: '', img: ''}
+}
+const getPosts = new GetPost()
+// getPosts.content.paragraph
+```
+
+<br>
+
+We also can predefine the `content` type. In this example now it will only accept `object or string`.
+```ts
+interface PostType<T extends object|string> {
+	id: number
+	title: string
+	content: T
+}
+```

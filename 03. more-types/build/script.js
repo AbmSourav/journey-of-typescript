@@ -27,12 +27,14 @@ var enumType = Color.Red;
 function errorFunc(message) {
     throw new Error(message);
 }
-function getPost(post) {
-    console.log(post);
+// errorFunc('Error Message')
+// Generics
+function apiResponse(obg) {
+    return obg;
 }
-getPost({
-    id: 255,
-    title: 'Hello Universe',
-    // content: {data: 'content'}	// type error
-    content: 'Content goes here'
+var response = apiResponse({
+    code: 200,
+    message: 'OK',
+    data: []
 });
+console.log(response.code);

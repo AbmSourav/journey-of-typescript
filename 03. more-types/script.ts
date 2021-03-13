@@ -33,3 +33,16 @@ function errorFunc(message: string): never {
 	throw new Error(message);
 }
 // errorFunc('Error Message')
+
+
+// Generics
+function apiResponse<T>(obg: T) {
+	return obg;
+}
+
+const response = apiResponse({
+	code: 200,
+	message: 'OK',
+	data: []
+})
+console.log(response.code);

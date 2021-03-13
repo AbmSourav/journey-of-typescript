@@ -56,5 +56,59 @@ function errorMsg(message: string): never {
 errorMsg('Error Message')	// prints a error message.
 ```
 
-## Interface
-// toDo: add interface doc link
+<br>
+
+## Generics
+In languages like C# and Java, one of the main tools in the toolbox for creating reusable components is generics, that is, being able to create a component that can work over a variety of types rather than a single one. This allows users to consume these components and use their own types.
+
+<br>
+
+For Example, in a api response we don't know what'll be the structure/type of the response. But we need to access those data. Here we can get the `type/stucture` with generic type anotation: `<anything>`. By convention we write `<T>` **T** in it.
+<br>
+
+`<T>` After the function name will receive the type and send it to `obj: T`
+```ts
+function apiResponse<T>(obj: T) {
+	return obj;
+}
+
+const response = apiResponse({
+	code: 200,
+	message: 'OK',
+	data: []
+})
+console.log(response.code);
+```
+
+<br>
+
+You must be thinking, we can do it this way...
+No we can't do it. TypeScript will through an error.
+```ts
+function apiResponse(obg: object) {
+	return obg;
+}
+const res = apiResponse({
+	code: 200,
+	message: 'OK',
+	data: []
+})
+console.log(res.code);	// Error: 'code' does not exist on type 'object'.
+```
+
+<br>
+
+Now we also get a problem on the above example. We said `<T>`, that means any type will be acceptable. For example, if we try this we'll not get any error.
+```ts
+const response = apiResponse('Hello Universe')
+console.log(response);
+```
+
+<br>
+
+The good news is TypeScript also has a solution for this. We can declare the *type* in `<T>`
+```ts
+function apiResponse<T extends object>(obj: T) {
+	return obj;
+}
+```

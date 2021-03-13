@@ -33,3 +33,18 @@ var RollsRoyce = /** @class */ (function () {
     return RollsRoyce;
 }());
 new RollsRoyce("Ghost (sedan)");
+// const post: PostType<object> = {
+// 	id: 11,
+// 	title: "Hi There",
+// 	content: {text: '', img: ''}
+// }
+var GetPost = /** @class */ (function () {
+    function GetPost() {
+        this.id = 11;
+        this.title = "Hi There";
+        this.content = { paragraph: '', img: '' };
+    }
+    return GetPost;
+}());
+var getPosts = new GetPost();
+// getPosts.content.paragraph
