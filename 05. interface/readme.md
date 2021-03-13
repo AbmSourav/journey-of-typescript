@@ -35,7 +35,7 @@ interface Car {
 }
 
 interface Tesla extends Car {
-	// wheel: string	// type error
+	// brand: object	// type error
 	model: string | number
 	electricEngin: boolean
 }
