@@ -117,3 +117,18 @@ function apiResponse<T extends object>(obj: T) {
 	return obj;
 }
 ```
+
+<br>
+
+## Literal Types
+In addition to the general types string and number, we can refer to specific strings and numbers in type positions.
+```ts
+type Alignment = "left" | "center" | "right";
+
+function alignment(selector: string, align: Alignment) {
+	const el = document.getElementById(selector)!
+	el.style.textAlign = align
+}
+alignment("#root", "center")
+```
+
