@@ -111,7 +111,7 @@ console.log(response);
 
 <br>
 
-The good news is TypeScript also has a solution for this. We can declare the *type* in `<T>`
+The good news is TypeScript also has a solution for this. We can extend other *type* in `<T>`
 ```ts
 function apiResponse<T extends object>(obj: T) {
 	return obj;
