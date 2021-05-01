@@ -8,7 +8,7 @@ Let's Learn TypeScript
 * [Basic Types](https://github.com/AbmSourav/journey-of-typescript/tree/main/01.%20basic-types#basic-data-types-in-typescript)
 * [Functions](https://github.com/AbmSourav/journey-of-typescript/tree/main/02.%20functions#function)
 * [More Types](https://github.com/AbmSourav/journey-of-typescript/tree/main/03.%20more-types#advanced-types)
-* Classes
+* [Classes](https://github.com/AbmSourav/journey-of-typescript/tree/main/04.%20Class#class)
 * [Interface](https://github.com/AbmSourav/journey-of-typescript/tree/main/05.%20interface#interfaces)
 
 <br>
