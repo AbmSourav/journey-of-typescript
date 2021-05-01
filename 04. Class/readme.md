@@ -46,3 +46,16 @@ class Greetings {
 	}
 }
 ```
+
+<br>
+
+## Super Calls
+Just as in JavaScript, if you have a base class, you’ll need to call `super()` in your constructor body before using any `this`.
+```ts
+class Human extends Person {
+	constructor() {
+		super();
+		console.log(this.name);
+	}
+}
+```
