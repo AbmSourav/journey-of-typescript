@@ -1,4 +1,4 @@
-# journey-of-typescript
+# TypeScript
 Let's Learn TypeScript
 
 <br>
