@@ -18,7 +18,8 @@ class Person {
 The `strictPropertyInitialization` setting controls whether class fields need to be initialized in the constructor.
 
 ```ts
-// It will provide this error message: "Property 'name' has no initializer and is not definitely assigned in the constructor".
+// It will provide this error message: 
+// "Property 'name' has no initializer and is not definitely assigned in the constructor".
 class Person {
   name: string;
 }
