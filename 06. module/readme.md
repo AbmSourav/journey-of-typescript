@@ -50,6 +50,7 @@ import {Person as Sourav} from './greetings.js';
 <br>
 
 ## Import Types
+TypeScript has extended the `import` syntax with `import type`. It can only import types.
 ```ts
 export type Response = { code: number; message: string };
 
