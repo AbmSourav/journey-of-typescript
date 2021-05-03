@@ -10,6 +10,7 @@ Let's Learn TypeScript
 * [More Types](https://github.com/AbmSourav/journey-of-typescript/tree/main/03.%20more-types#advanced-types)
 * [Classes](https://github.com/AbmSourav/journey-of-typescript/tree/main/04.%20Class#class)
 * [Interface](https://github.com/AbmSourav/journey-of-typescript/tree/main/05.%20interface#interfaces)
+* [Module](https://github.com/AbmSourav/journey-of-typescript/tree/main/06.%20module#module)
 
 <br>
 <hr>
