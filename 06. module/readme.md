@@ -55,7 +55,7 @@ TypeScript has extended the `import` syntax with `import type`. It can only impo
 export type Response = { code: number; message: string };
 
 
-import {Response} from './filename.js';
+import type {Response} from './filename.js';
 const getData = (res: Response) => {
 	console.log(res.code, res.message);
 }
